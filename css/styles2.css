@@ -44,10 +44,14 @@ body {
     list-style: none;
 }
 
+.item {
+    list-style: none;
+}
 
 
-/* 
-* -----portfolio button------- */  
+
+
+/* portfolio */
 
 
 .portfolio-conteiner {
@@ -58,6 +62,7 @@ body {
 
     padding-left: 15px;
     padding-right: 15px;
+    list-style: none;
 
     background-color: crimson;
 
@@ -68,6 +73,7 @@ body {
     justify-content: center;
     margin-top: 59px;
     margin-bottom: 35px;
+    list-style: none;
 
 
     outline: 2px solid tomato;
@@ -75,7 +81,7 @@ body {
 }
 
 .hero-portfolio .button {
-    display: inline-block;
+    display: block;
     padding: 6.17px 22px;
     align-items: center;
     border-radius: 4px;
@@ -88,18 +94,30 @@ body {
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
+
+    list-style: none;
     cursor: pointer;
 
     outline: 2px solid tomato;
 }
 
+button {
+    list-style: none;
+}
 
 .portfolio .item+.item {
     margin-left: 30px;
     align-items: center;
 }
 
+.portfolio .item {
+    display: inline-block;
+    border-radius: 20px;
+    list-style: none;
 
+    text-decoration: none;
+
+}
 
 .hero-portfolio .button:hover,
 .hero-portfolio .button:focus {
