@@ -52,33 +52,16 @@ ul {
 /* навігація */
 
 
-/* .container {
-    width: 100%;
+.container {
+    width: 320px;
 
     margin-left: auto;
     margin-right: auto;
 
-    padding-left: 15px;
-    padding-right: 15px;
-
-    @media screen and (min-width: 320px) {
-        width: 320px;
-    }
-    
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
-    
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
-
-}
+    padding-left: 20px;
+    padding-right: 20px;
 
 
-.header-page {
-    display: flex;
-    text-align: center;
 }
 
 .link {
@@ -89,127 +72,149 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+} 
+
+
+.products__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
 }
 
-/* Логотип */
+.products__top-text {
+    
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFA5BA;
+}
 
-.page-nav {
+.products__title {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: #D41443;
+}
+
+
+.products__list {}
+
+
+
+.products__item {
+    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
-}
+    max-width: 280px;
+    width: 100%;
+    height: 489px;
 
-.logo {
+    padding: 160px 39px 40px 41px;
 
-    text-decoration: none;
-    font-family: Raleway, sans-serif;
-
-    font-size: 26px;
-    line-height: 1.19;
-}
-
-.logo-web {
-    color: var(--accent-color);
-}
-
-.logo-studio {
-    color: var(--logo-text-color);
+    border-radius: 24px;
 }
 
 
 
-/* site-nav */
-
-.site-nav {
-    display: flex;
-    margin-left: 93px;
+.products__item:not(:last-child) {
+    margin-bottom: 140px;
 }
 
-.site-nav .link {
+.products__item--first {
+    
+    background-color: #FFB8CA;
+}
+
+.products__item--first::before {
+    content: '';
+    position: absolute;
+    top: -140px;
+    left: 0;
+    background-image: url(/images/ice-desk-1x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    width: 280px;
+    height: 280px;
+    margin-bottom: 20px;
 
 
-    color: var(--sitenav-text-color);
+}
 
-    font-family: inherit;
-    font-weight: 500;
+.products__item--second {
+    background-color: #F0D1A5;
+}
+
+.products__item--third {
+    background-color: #C2E297;
+}
+
+.products__item-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    margin-bottom: 32px;
+    
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+.products__item-title::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    color: #FFFFFF;
+}
+
+
+.products__text {
+    font-weight: 700;
     font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    line-height: 1.52;
 
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-    color: var(--accent-color);
-}
-
-.site-nav .link.current {
-    color: var(--accent-color);
+    text-align: center;
+    letter-spacing: 0.04em;
+    
+    color: #FFFFFF;
 }
 
 
-.site-nav .item+.item {
-    margin-left: 50px;
-}
+.products__text::before {
+    content: '';
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    background-image: url(/images/arrow-right\ 4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 40px;
+    height: 40px;
+    
 
-
-/* auth-nav */
-
-.auth-nav .link:hover,
-.auth-nav .link:focus {
-    color: var(--accent-color);
-}
-
-
-.auth-nav {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
 }
 
 
 
-.auth-nav .item+.item {
-    margin-left: 50px;
-}
 
 
-.auth-nav .link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    color: var(--primary-text-color);
-    text-decoration: none;
-
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-
-
-.auth-nav.list .item {
-    display: flex;
-    align-items: center;
-}
-
-.mail-icon {
-    margin-right: 10px;
-}
-.auth-nav .link:hover,
-.auth-nav .link:focus {
-    stroke: currentColor;
-}
-
-.auth-nav .div:hover {
-    fill: #2188f3; */
-}
-
-
-.gft {
+/* .gft {
     display: flex;
     width: 1200px;
     height: 300px;
@@ -237,4 +242,4 @@ img {
     display: block;
     width: 100%;
 
-}
+} */
