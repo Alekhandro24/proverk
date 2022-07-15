@@ -74,6 +74,8 @@ img {
     height: auto;
 } 
 
+/* -----------jhdfjkdhfjdhfjhdf-------- */
+
 
 .products__container {
     padding-top: 60px;
@@ -82,6 +84,7 @@ img {
 }
 
 .products__top-text {
+    margin-bottom: 15px;
     
     font-weight: 400;
     font-size: 18px;
@@ -94,6 +97,7 @@ img {
 }
 
 .products__title {
+    margin-bottom: 140px;
     font-weight: 400;
     font-size: 34px;
     line-height: 1.15;
@@ -104,8 +108,13 @@ img {
     color: #D41443;
 }
 
+.products__list {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-.products__list {}
+}
 
 
 
@@ -122,8 +131,6 @@ img {
 
     border-radius: 24px;
 }
-
-
 
 .products__item:not(:last-child) {
     margin-bottom: 140px;
@@ -147,24 +154,53 @@ img {
     width: 280px;
     height: 280px;
     margin-bottom: 20px;
-
-
 }
 
 .products__item--second {
     background-color: #F0D1A5;
 }
 
+.products__item--second::before {
+    content: '';
+    position: absolute;
+    top: -140px;
+    left: 0;
+    background-image: url(/images/shake-desk-1x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 280px;
+    height: 280px;
+    margin-bottom: 20px;
+}
+
 .products__item--third {
     background-color: #C2E297;
 }
 
+.products__item--third::before {
+    content: '';
+    position: absolute;
+    top: -140px;
+    left: 0;
+    background-image: url(/images/shoko-desk-1x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 280px;
+    height: 280px;
+    margin-bottom: 20px;
+}
+
 .products__item-title {
+    position: relative;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.15;
-    margin-bottom: 32px;
-    
+    margin-top: 20px;
+   
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -174,11 +210,15 @@ img {
 
 .products__item-title::after {
     content: '';
+    margin: 32px auto;
+
+    background-image: url(../images/Group-4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     display: block;
-    width: 6px;
+    width: 26px;
     height: 6px;
-    border-radius: 50%;
-    color: #FFFFFF;
 }
 
 
@@ -191,14 +231,16 @@ img {
     letter-spacing: 0.04em;
     
     color: #FFFFFF;
+
+    margin-bottom: 30px;
 }
 
 
-.products__text::before {
+.products__text::after {
     content: '';
-    position: absolute;
-    bottom: 40px;
-    left: 0;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url(/images/arrow-right\ 4.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -207,7 +249,6 @@ img {
     width: 40px;
     height: 40px;
     
-
 }
 
 
